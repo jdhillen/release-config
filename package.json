@@ -1,0 +1,66 @@
+{
+  "name": "@jdhillen/release-config-test",
+  "version": "0.0.0",
+  "description": "Shared semantic-release dependencies and configuration",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.js",
+  "files": [
+    "bin/**",
+    "src/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": {
+    "name": "J.D. Hillen",
+    "email": "jhillen01@gmail.com",
+    "url": "https://links.jdhillen.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdhillen/release-config-test.git"
+  },
+  "keywords": [
+    "semantic-release",
+    "release-config",
+    "commitizen",
+    "conventional-changelog",
+    "npm-config",
+    "jdhillen"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "bin": {
+    "setup-release-config": "./bin/setup-release-config.js"
+  },
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "commit": "cz",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "semantic-release": "^24.2.1"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^24.2.1"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
