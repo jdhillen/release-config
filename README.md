@@ -1,4 +1,4 @@
-# @jdhillen/release-config-test
+# @jdhillen/release-config
 
 ## Semantic Release Configuration
 
@@ -16,7 +16,7 @@ A shareable semantic-release configuration for standardizing release management 
 
 ```bash
 # Using npm
-npm install --save-dev @jdhillen/release-config-test
+npm install --save-dev @jdhillen/release-config
 
 # Run the setup script
 npx setup-release-config
@@ -37,7 +37,7 @@ If you prefer to set up manually, follow these steps:
 
 ```javascript
 export default {
-  extends: '@jdhillen/release-config-test'
+  extends: '@jdhillen/release-config'
 };
 ```
 

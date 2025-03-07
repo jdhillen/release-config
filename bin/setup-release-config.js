@@ -13,7 +13,7 @@ async function createReleaseConfig() {
   }
 
   const releaseConfig = `export default {
-  extends: '@jdhillen/release-config-test'
+  extends: '@jdhillen/release-config'
 };`;
 
   console.log('📝 Creating release.config.js...');
