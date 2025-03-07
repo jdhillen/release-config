@@ -1,4 +1,4 @@
-# @jdhillen/release-config-test
+# @jdhillen/release-config
 
 ## Semantic Release Configuration
 
@@ -16,7 +16,7 @@ A shareable semantic-release configuration for standardizing release management 
 
 ```bash
 # Using npm
-npm install --save-dev @jdhillen/release-config-test
+npm install --save-dev @jdhillen/release-config
 
 # Run the setup script
 npx setup-release-config
@@ -24,7 +24,7 @@ npx setup-release-config
 
 The setup script will automatically:
 
-1. Create `config/release.config.js` with the proper configuration
+1. Create `release.config.js` with the proper configuration
 2. Add Commitizen configuration to your `package.json`
 3. Add the commit script to your `package.json`
 4. Add the semantic-release script to your `package.json`
@@ -33,11 +33,11 @@ The setup script will automatically:
 
 If you prefer to set up manually, follow these steps:
 
-1. Create `config/release.config.js`:
+1. Create `release.config.js`:
 
 ```javascript
 export default {
-  extends: '@jdhillen/release-config-test'
+  extends: '@jdhillen/release-config'
 };
 ```
 
@@ -49,17 +49,6 @@ export default {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
-}
-```
-
-3. Add release scripts to your `package.json`:
-
-```json
-{
-  "scripts": {
-    "commit": "cz",
-    "semantic-release": "semantic-release --extends ./config/release.config.js",
   }
 }
 ```
