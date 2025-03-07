@@ -1,6 +1,6 @@
 {
   "name": "@jdhillen/release-config",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Shared semantic-release dependencies and configuration",
   "license": "MIT",
   "type": "module",
